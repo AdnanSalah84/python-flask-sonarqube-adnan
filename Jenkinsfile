@@ -6,19 +6,7 @@ pipeline {
     stage('Checkout') {
         steps {
           // Get some code from a GitHub repository
-          git branch: 'main', url: 'https://github.com/AdnanSalah84/vat-calculator-Adnan.git'
-        }
-    }
-    stage('Install') {
-        steps {
-            // Install the ReactJS dependencies
-            sh "npm install"
-        }
-    }
-    stage('Test') {
-        steps {
-          // Run the ReactJS tests
-          sh "npm test"
+          git branch: 'main', url: 'https://github.com/AdnanSalah84/python-flask-sonarqube-adnan.git'
         }
     }
     stage('SonarQube Analysis') {
